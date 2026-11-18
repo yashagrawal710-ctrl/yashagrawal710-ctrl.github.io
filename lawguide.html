@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-LawGuide | Yash Agrawal</title>
+<meta name="description" content="A legal assistant that reads dense contracts, answers questions about them in plain language and matches people with the right lawyer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="AI-LawGuide | Yash Agrawal">
+<meta property="og:description" content="A legal assistant that reads dense contracts, answers questions about them in plain language and matches people with the right lawyer.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.04 12.32a1 1 0 010-.64l4.43-7.45A1 1 0 017.48 4h9.04a1 1 0 01.99.88l4.43 7.45a1 1 0 010 .64l-4.43 7.45a1 1 0 01-.99.58H7.48a1 1 0 01-1-.88z"/><circle cx="12" cy="12" r="3"/></svg>Yash Agrawal</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="work.html" aria-current="page">Work</a><a href="experience.html">Experience</a><a href="about.html">About</a><a class="cta" href="#contact">Contact</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap">
+  <section class="page-hero case-top" style="--c:var(--law)">
+    <a class="crumb" href="work.html">All projects</a><br>
+    <span class="tag rise">RAG, legal tech</span>
+    <h1 class="rise d1">AI-LawGuide</h1>
+    <p class="lede rise d2">A legal assistant that reads dense contracts, answers questions about them in plain language and matches people with the right lawyer.</p>
+    <dl class="facts rise d3"><div><dt>Role</dt><dd>Developer</dd></div><div><dt>Approach</dt><dd>Retrieval-augmented generation</dd></div><div><dt>Backend</dt><dd>FastAPI, JWT auth</dd></div><div><dt>Code</dt><dd><a href="https://github.com/yashagrawal710-ctrl">GitHub</a></dd></div></dl>
+  </section>
+  <div class="cover art" style="--c:var(--law)"><svg viewBox="0 0 900 380" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="900" height="380" fill="#B5651D"/><rect x="430" y="36" width="370" height="380" rx="14" fill="#FFF8EC"/><rect x="460" y="67" width="210" height="9" rx="4.5" fill="#3A2A18" opacity="0.35"/><rect x="460" y="101" width="255" height="9" rx="4.5" fill="#3A2A18" opacity="0.35"/><rect x="452" y="129" width="265" height="22" rx="4" fill="#F5C66B"/><rect x="460" y="135" width="249" height="9" rx="4.5" fill="#3A2A18" opacity="0.85"/><rect x="460" y="169" width="196" height="9" rx="4.5" fill="#3A2A18" opacity="0.35"/><rect x="460" y="203" width="227" height="9" rx="4.5" fill="#3A2A18" opacity="0.35"/><rect x="452" y="231" width="313" height="22" rx="4" fill="#F5C66B"/><rect x="460" y="237" width="297" height="9" rx="4.5" fill="#3A2A18" opacity="0.85"/><rect x="452" y="265" width="273" height="22" rx="4" fill="#F5C66B"/><rect x="460" y="271" width="257" height="9" rx="4.5" fill="#3A2A18" opacity="0.85"/><rect x="460" y="305" width="240" height="9" rx="4.5" fill="#3A2A18" opacity="0.35"/><rect x="460" y="339" width="260" height="9" rx="4.5" fill="#3A2A18" opacity="0.35"/><g><rect x="120" y="96" width="260" height="70" rx="20" fill="#FFF8EC"/><rect x="146" y="120" width="170" height="9" rx="4.5" fill="#B5651D"/><rect x="146" y="138" width="120" height="9" rx="4.5" fill="#B5651D" opacity=".5"/></g><g><rect x="160" y="196" width="230" height="70" rx="20" fill="#3A2A18"/><rect x="186" y="220" width="150" height="9" rx="4.5" fill="#F5C66B"/><rect x="186" y="238" width="100" height="9" rx="4.5" fill="#F5C66B" opacity=".55"/></g></svg></div>
+  <section class="split"><h2>The problem</h2><div class="txt"><p>Contracts are written for lawyers, not for the people signing them. Most people can't tell which clauses matter, and finding a lawyer with the right specialty nearby takes time.</p></div></section>
+  <section class="split"><h2>What I built</h2><div class="txt"><ul><li>Architected a retrieval-augmented (RAG) pipeline: PyMuPDF extracts text from contract PDFs, ChromaDB stores the chunks as embeddings, and the chatbot answers from the most relevant clauses.</li><li>Built a JWT-secured appointment booking API in FastAPI.</li><li>Wrote lawyer matching on three parameters: specialty, location and experience.</li><li>Connected a JavaScript front end to the chatbot and booking API.</li></ul></div></section>
+  <section class="split"><h2>Results</h2><div class="txt"></div></section>
+  <div class="results"><div class="result" style="--c:var(--law)"><b>90%+</b><span>comprehension accuracy on legal terminology</span></div><div class="result" style="--c:var(--law)"><b>3</b><span>parameters for lawyer matching</span></div><div class="result" style="--c:var(--law)"><b>JWT</b><span>secured booking API</span></div></div>
+  
+  <section class="split"><h2>Built with</h2><div class="txt"><ul class="stack"><li>Python</li><li>FastAPI</li><li>ChromaDB</li><li>RAG</li><li>PyMuPDF</li><li>JWT</li><li>JavaScript</li></ul></div></section>
+  <a class="next" href="agrishield.html"><span>Next project</span><b>AgriShield</b></a>
+</div>
+</main>
+<footer class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h">Looking for internships and jobs in software.</h2>
+    <div class="reach">
+      <a class="mail" href="mailto:yash.agrawal24@vit.edu">yash.agrawal24@vit.edu</a>
+      <a class="mail" href="tel:+916232798266">+91 62327 98266</a>
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/yash-agrawal-75b944360">LinkedIn</a>
+      <a href="https://github.com/yashagrawal710-ctrl">GitHub</a>
+      <a href="https://ieeexplore.ieee.org/document/11405214">IEEE paper</a>
+      <button class="copy" type="button" id="copy">Copy email</button>
+    </div>
+    <div class="foot"><span>© 2026 Yash Agrawal, Pune</span><nav aria-label="Footer"><a href="index.html">Home</a><a href="work.html">Work</a><a href="experience.html">Experience</a><a href="about.html">About</a></nav></div>
+  </div>
+</footer>
+<dialog class="viewer" id="viewer" aria-labelledby="viewer-cap">
+  <div class="viewer-bar"><span id="viewer-cap"></span><button type="button" id="viewer-close">Close</button></div>
+  <img alt="">
+</dialog>
+<script src="assets/site.js"></script>
+</body>
+</html>

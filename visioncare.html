@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VisionCare | Yash Agrawal</title>
+<meta name="description" content="An eye health web app that detects eye diseases from a photo, runs vision tests at home and explains symptoms with AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="VisionCare | Yash Agrawal">
+<meta property="og:description" content="An eye health web app that detects eye diseases from a photo, runs vision tests at home and explains symptoms with AI.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.04 12.32a1 1 0 010-.64l4.43-7.45A1 1 0 017.48 4h9.04a1 1 0 01.99.88l4.43 7.45a1 1 0 010 .64l-4.43 7.45a1 1 0 01-.99.58H7.48a1 1 0 01-1-.88z"/><circle cx="12" cy="12" r="3"/></svg>Yash Agrawal</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="work.html" aria-current="page">Work</a><a href="experience.html">Experience</a><a href="about.html">About</a><a class="cta" href="#contact">Contact</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap">
+  <section class="page-hero case-top" style="--c:var(--vision)">
+    <a class="crumb" href="work.html">All projects</a><br>
+    <span class="tag rise">Deep learning, healthcare</span>
+    <h1 class="rise d1">VisionCare</h1>
+    <p class="lede rise d2">An eye health web app that detects eye diseases from a photo, runs vision tests at home and explains symptoms with AI.</p>
+    <dl class="facts rise d3"><div><dt>Role</dt><dd>Developer</dd></div><div><dt>Model</dt><dd>CNN, 5 classes</dd></div><div><dt>Status</dt><dd>Accepted for book publication, patent pending</dd></div><div><dt>Code</dt><dd><a href="https://github.com/yashagrawal710-ctrl/Vision-Care">GitHub</a></dd></div></dl>
+  </section>
+  <div class="cover" style="--c:var(--vision)"><img src="img/vc-home.webp" alt="VisionCare home page" ></div>
+  <section class="split"><h2>The problem</h2><div class="txt"><p>Many eye conditions are caught late because screening means booking a clinic visit. I wanted a first check that anyone could run at home in a few minutes, with clear next steps when something looks wrong.</p></div></section>
+  <section class="split"><h2>What I built</h2><div class="txt"><ul><li>Trained a convolutional neural network in Keras and TensorFlow that sorts eye photos into five classes: cataracts, uveitis, bulging eyes, crossed eyes and healthy. Images are resized to 224 × 224 and served from a Flask prediction API.</li><li>Built an AI symptom checker on Groq Vision AI over a REST API. It takes typed symptoms, speech-to-text input or an uploaded eye report.</li><li>Designed four at-home screening tests: visual acuity with screen calibration, color vision plates, an Amsler grid you draw on, and an astigmatism chart.</li><li>Added sign-in, saved test history, a doctor finder and downloadable PDF reports to share with a doctor.</li></ul></div></section>
+  <section class="split"><h2>Results</h2><div class="txt"></div></section>
+  <div class="results"><div class="result" style="--c:var(--vision)"><b>92%</b><span>accuracy detecting five eye conditions</span></div><div class="result" style="--c:var(--vision)"><b><2.5 s</b><span>symptom checker response time under concurrent load</span></div><div class="result" style="--c:var(--vision)"><b>4</b><span>at-home vision tests in one app</span></div></div>
+  <section class="split" style="padding-bottom:28px"><h2>Screens</h2><div class="txt"><p>Click a screen to see it full size.</p></div></section><div class="gallery"><button class="shot" type="button" data-full="img/vc-home.webp" data-cap="Home page"><img src="img/vc-home.webp" alt="VisionCare home page with a button to begin a free eye test" loading="lazy"><span>Home page</span></button><button class="shot" type="button" data-full="img/vc-symptoms.webp" data-cap="AI symptom checker"><img src="img/vc-symptoms.webp" alt="Symptom checker with medical report upload and a symptom text box" loading="lazy"><span>AI symptom checker</span></button><button class="shot" type="button" data-full="img/vc-tests.webp" data-cap="Eye test menu"><img src="img/vc-tests.webp" alt="Menu of four online eye tests" loading="lazy"><span>Eye test menu</span></button><button class="shot" type="button" data-full="img/vc-color.webp" data-cap="Color vision test"><img src="img/vc-color.webp" alt="Color vision test showing a dotted plate and four answer buttons" loading="lazy"><span>Color vision test</span></button><button class="shot" type="button" data-full="img/vc-astigmatism.webp" data-cap="Astigmatism test"><img src="img/vc-astigmatism.webp" alt="Astigmatism test with a radial line chart" loading="lazy"><span>Astigmatism test</span></button><button class="shot" type="button" data-full="img/vc-amsler.webp" data-cap="Amsler grid test"><img src="img/vc-amsler.webp" alt="Amsler grid test with a grid to draw distortions on" loading="lazy"><span>Amsler grid test</span></button></div>
+  <section class="split"><h2>Built with</h2><div class="txt"><ul class="stack"><li>Python</li><li>Flask</li><li>TensorFlow</li><li>Keras</li><li>Groq API</li><li>REST API</li><li>JavaScript</li><li>Tailwind CSS</li><li>jsPDF</li></ul></div></section>
+  <a class="next" href="lawguide.html"><span>Next project</span><b>AI-LawGuide</b></a>
+</div>
+</main>
+<footer class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h">Looking for internships and jobs in software.</h2>
+    <div class="reach">
+      <a class="mail" href="mailto:yash.agrawal24@vit.edu">yash.agrawal24@vit.edu</a>
+      <a class="mail" href="tel:+916232798266">+91 62327 98266</a>
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/yash-agrawal-75b944360">LinkedIn</a>
+      <a href="https://github.com/yashagrawal710-ctrl">GitHub</a>
+      <a href="https://ieeexplore.ieee.org/document/11405214">IEEE paper</a>
+      <button class="copy" type="button" id="copy">Copy email</button>
+    </div>
+    <div class="foot"><span>© 2026 Yash Agrawal, Pune</span><nav aria-label="Footer"><a href="index.html">Home</a><a href="work.html">Work</a><a href="experience.html">Experience</a><a href="about.html">About</a></nav></div>
+  </div>
+</footer>
+<dialog class="viewer" id="viewer" aria-labelledby="viewer-cap">
+  <div class="viewer-bar"><span id="viewer-cap"></span><button type="button" id="viewer-close">Close</button></div>
+  <img alt="">
+</dialog>
+<script src="assets/site.js"></script>
+</body>
+</html>
